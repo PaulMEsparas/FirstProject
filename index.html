@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>PM</title>
+  </head>
+  <body>
+    <section>
+      <div class="wrapper">
+        <div class="left">
+          <h1>Make your own design!</h1>
+          <form class="try-it-form">
+            <input
+              id="getname"
+              class="try-it-text"
+              type="text"
+              placeholder="Name Here"
+              onkeydown="return event.key != 'Enter';"
+            />
+            <br /><br />
+            <p>Date of Birth</p>
+            <input class="date" type="date" id="indate" name="date" />
+          </form>
+          <div>
+            <p class="p">-Choose style-</p>
+            <ul class="images">
+              <li class="gem active 1">
+                <img src="NZ GemStone Images/1.jfif" alt="1" />
+              </li>
+              <li class="gem 2">
+                <img src="NZ GemStone Images/Gem2.png" alt="2" />
+              </li>
+              <li class="gem 3">
+                <img src="NZ GemStone Images/gem3.png" alt="3" />
+              </li>
+              <li class="gem 4">
+                <img src="NZ GemStone Images/4.jfif" alt="4" />
+              </li>
+              <li class="gem 5">
+                <img src="NZ GemStone Images/5.jfif" alt="5" />
+              </li>
+            </ul>
+          </div>
+          <div class="styleWrapper">
+            <div class="leftside">
+              <p>-Frame-</p>
+              <ul class="imagesFrame">
+                <li class="frame select a">
+                  <img src="NZ GemStone Images/Frame3.png" alt="WoodFrame" />
+                </li>
+                <li class="frame b">
+                  <img src="NZ GemStone Images/Frame6.png" alt="WhiteFrame" />
+                </li>
+              </ul>
+            </div>
+            <div class="rightside">
+              <p>-Font-</p>
+              <div class="fontSide">
+                <div class="jon choose font">Font Style 1</div>
+                <div class="bir font">Font Style 2</div>
+              </div>
+            </div>
+          </div>
+          <div class="button-style">
+            <button id="randomise" class="button">CREATE</button>
+          </div>
+        </div>
+
+        <div class="right">
+          <div class="frameImg" id="frameImg">
+            <img src="NZ GemStone Images/Frame3.png" alt="Frame" />
+          </div>
+          <div class="nameframe" id="name"></div>
+          <div class="imgframe" id="imgframe">
+            <img src="NZ GemStone Images/1.jfif" alt="Greenstone1" />
+          </div>
+          <div class="dobframe" id="dobframe"></div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
